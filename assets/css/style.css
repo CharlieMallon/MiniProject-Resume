@@ -118,7 +118,7 @@ header {
 }
 
 .logo {
-    background: url("../images/rosie.jpg");
+    background: url("../img/rosie.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -388,7 +388,7 @@ button[type="submit"] {
 }
 
 /*--------------------------------------------Map*/
-div#map {
+div #map {
     min-height: 360px;
 }
 
