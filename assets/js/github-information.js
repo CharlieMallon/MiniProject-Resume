@@ -1,5 +1,5 @@
-function userInformationHTML (user){
-    return`
+function userInformationHTML(user) {
+    return `
         <h2>${user.name}
             <span class="small-name">
                 (@<a href="${user.html_url}" target="_blank">${user.login}</a>)
@@ -8,31 +8,31 @@ function userInformationHTML (user){
         <div class="gh-content">
             <div class="gh-avatar">
                 <a href="${user.html_url}" target="_blank">
-                    <img src="${user.avatar_url}" alt="${user.login}" width="80px" height="80px">
+                    <img src="${user.avatar_url}" width="80" height="80" alt="${user.login}" />
                 </a>
             </div>
             <p>
-                Followers: ${user.followers} - Following ${user.following}
+                Followers: ${user.followers} - Following ${user.following} 
                 <br>
                 Repos: ${user.public_repos}
             </p>
         </div>`;
 }
 
-function repoInformationHTM (repos){
+function repoInformationHTML(repos) {
     if (repos.length == 0) {
         return `
             <div class="clearfix repo-list">
-                No Repos!
-            </div>`
+                No repos!
+            </div>`;
     }
 
-    var listItemsHTML = repos.map(function(repo){
+    var listItemsHTML = repos.map(function(repo) {
         return `
             <li>
                 <a href="${repo.html_url}" target="_blank">${repo.name}</a>
-            </li>`
-    })
+            </li>`;
+    });
 
     return `
         <div class="clearfix repo-list">
