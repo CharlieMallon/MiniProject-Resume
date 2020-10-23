@@ -186,14 +186,12 @@ header {
     letter-spacing: 2px;
 }
 
-
 /*--------------------------------------------Hover.css*/
 
 .hvr-sweep-to-bottom:before {
     background: rgba(0, 0, 0, 0.2);
     height: 120px;
 }
-
 
 /*--------------------------------------------Footer*/
 
@@ -315,7 +313,6 @@ footer .cv-pdf i:hover {
     margin: 40px 20px;
 }
 
-
 /*--------------------------------------------Work History*/
 
 .timeline-item {
@@ -388,6 +385,7 @@ button[type="submit"] {
 }
 
 /*--------------------------------------------Map*/
+
 div #map {
     min-height: 360px;
 }
